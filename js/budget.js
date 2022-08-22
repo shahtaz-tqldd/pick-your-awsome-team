@@ -1,18 +1,3 @@
-// getting provided input field number
-function getElementInputField(eventId){
-    const elementField = document.getElementById(eventId)
-    const elementString = elementField.value;
-    const getInputNumber = parseFloat(elementString)
-
-    return getInputNumber;
-}
-
-// setting calculated number into an innertext
-function setElementTextById(textId, value){
-    const textElementField = document.getElementById(textId)
-    textElementField.innerText = value
-}
-
 // Calculation of total budget of 5 players
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const playerBudget = getElementInputField('player-budget-field')
