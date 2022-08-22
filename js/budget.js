@@ -1,8 +1,16 @@
 // Calculation of total budget of 5 players
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const playerBudget = getElementInputField('player-budget-field')
-    const totalPlayerBudget = playerBudget * 5;
-    setElementTextById('total-player-budget', totalPlayerBudget)
+    const playerNumberString = document.getElementById('player-number').innerText
+    const playerNumber = parseInt(playerNumberString)
+    const totalPlayerBudget = playerBudget * playerNumber;
+
+    if(totalPlayerBudget === 0){
+        alert('You Have not selected any Players')
+    }
+    else{
+        setElementTextById('total-player-budget', totalPlayerBudget)
+    }
 })
 
 // calculation of total expenses
