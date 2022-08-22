@@ -3,8 +3,12 @@ function getElementInputField(eventId){
     const elementField = document.getElementById(eventId)
     const elementString = elementField.value;
     const getInputNumber = parseFloat(elementString)
-    
-    return getInputNumber;
+    if(isNaN(getInputNumber) === true){
+        alert('Please Input a valid Number');
+    }
+    else{
+        return getInputNumber;
+    }
 
 }
 
