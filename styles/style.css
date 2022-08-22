@@ -10,7 +10,7 @@ body{
 
 /* padding and margin */
 .custom-pt{
-    padding-top: 8rem;
+    padding-top: 3rem;
 }
 
 /* image resizeing */
@@ -19,6 +19,7 @@ body{
 }
 .player-image{
     height: 220px;
+    width: 100%;
     object-fit: cover;
 }
 
