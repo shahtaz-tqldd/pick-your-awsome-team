@@ -1,8 +1,7 @@
 // Calculation of total budget of 5 players
 document.getElementById('btn-calculate').addEventListener('click', function(){
     const playerBudget = getElementInputField('player-budget-field')
-    const playerNumberString = document.getElementById('player-number').innerText
-    const playerNumber = parseInt(playerNumberString)
+    const playerNumber = getTextElementById('player-number');
     const totalPlayerBudget = playerBudget * playerNumber;
 
     if(totalPlayerBudget === 0){
@@ -20,7 +19,8 @@ document.getElementById('btn-calculate-total').addEventListener('click', functio
     const coachBudget = getElementInputField('coach-budget-field')
     
     const playerBudget = getElementInputField('player-budget-field')
-    const totalPlayerBudget = playerBudget * 5;
+    const playerNumber = getTextElementById('player-number');
+    const totalPlayerBudget = playerBudget * playerNumber;
  
     const totalBudget = managerBudget + coachBudget + totalPlayerBudget;
 
